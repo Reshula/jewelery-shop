@@ -1,24 +1,23 @@
-import { useState } from "react";
-import { data } from "./data";
-import Jewelery from "./Jewelery";
-import Button from "./Button"
 
-function Home(){
-    const [jewelery, setJewelery] = useState(data);
+import mainPic from './titlePic.jpg'
+import './App.css';
+import Contact from './Contact';
 
-    const choosenJew = (jewName) => {
-        const newJew = data.filter(element =>
-            element.jewName === jewName)
-            setJewelery(newJew)
-    }
 
-    return(
-        <div>
-            <Button filteredJew={ choosenJew}/>
-            <Jewelery jewelery= {jewelery} />
-            
+function Home() {
+  return  (
+    <div>
+    <div className="containerOne">
+      <img className="image" src={mainPic} alt="earing" width="1510px" />
+    </div>
+    <Contact />
 
-        </div>
+    
+ 
+    
+
+    </div>
     )
 }
+
 export default Home;

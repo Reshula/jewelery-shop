@@ -5,16 +5,23 @@ import {
   Route,
   Link,
 } from "react-router-dom";
-import './App.css';
-import FirstPage from './FirstPage';
+import Home from './Home';
+import Shop from './Shop';
+import Contact from './Contact';
+import './App.css'
 
 function App() {
   return <Router> 
   <nav>
-    <Link to="/" className='link'>FirstPage</Link>
+    <Link to="/home" className='link'>Home</Link>
+    <Link to="/shop" className='link'>Shop</Link>
+    <Link to="/contact" className='link'>Contact</Link>
+    <Link to="/cart" className='link'>Cart</Link>
   </nav>
   <Routes>
-    <Route path='/about' element={<FirstPage/>}/>
+    <Route path='/home' element={<Home/>}/>
+    <Route path='/shop' element={<Shop/>}/>
+    <Route path='/contact' element={<Contact/>}/>
     
   </Routes>
   </Router>

@@ -1,6 +1,4 @@
-/* body{
-  background-image: url(background.jpg);
-} */
+
 .containerOne{
   font-family: "Duru Sans", sans-serif;
  
@@ -11,24 +9,70 @@
   top: 0;
   z-index: -1;
 }
-.containerShop{
-  display: flex;
 
-  flex-wrap: wrap;
-  color: #685858;
-  font-family: "Duru Sans", sans-serif;
-}
-.containerButton{
-  display:flex;
-  flex-direction:column;
-}
 .change{
   background:none;
   border:none;
   color:#685858;
   font-family: "Duru Sans", sans-serif;
-  margin-right:100px;
+  /* margin-right:100px; */
  
+}
+nav{
+  display: flex;
+  justify-content: center;
+  padding: 5PX;
+  background-color: #685858;
+}
+.link {
+ padding: 10px;
+  text-decoration: none;
+  color: #C8C0BD;
+  font-family: "Duru Sans", sans-serif;
+  font-size: 20px;
+  
+  
+}
+.containerJewelery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #685858;
+  font-family: "Duru Sans", sans-serif;
+}
+.shop{
+  padding: 2%;
+
+  flex-grow: 1;
+
+  flex-basis: 16%;
+}
+
+.imageShop{
+  width: 200px;
+  height: 300px;
+  
+}
+.info{
+  display: flex;
+  flex-direction: column;
+}
+.containerButton{
+  display:flex;
+  flex-direction:column;
+  /* align-items: end; */
+  padding: 10px;
+}
+.buttonLike{
+  background: none;
+}
+.titleShop{
+  color: #685858;
+  text-align: center;
+  font-family: "Duru Sans", sans-serif;
+}
+body{
+  background-color: #eee8e5;
 }
 
 @media all and (max-width: 800px){
