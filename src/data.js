@@ -129,6 +129,7 @@ export const data = [
         price:"CAD$ 40",
         image:braceletFour,
     },
+    
 
 
 ]
