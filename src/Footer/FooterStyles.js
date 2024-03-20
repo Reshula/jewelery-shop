@@ -4,7 +4,7 @@ export const Box = styled.div`
 	padding:  3%;
 	background: #685858;
 	
-	width: 95%;
+	width: 100%;
 	
 		
 
@@ -19,26 +19,24 @@ flex-direction:column;
 	justify-content:center;
 	flex-wrap:wrap;
 	
-
-	
 `;
 
 export const Column = styled.div`
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	margin-left: 40px;
+	margin-left: 20px;
 `;
 
 export const Row = styled.div`
-	display: grid;
+	display:flex;
 	grid-template-columns: repeat(
 		auto-fill,
 		minmax(185px, 1fr)
 	);
-	grid-gap: 20px;
+	// grid-gap: 20px;
 
-	@media (max-width: 1000px) {
+	@media (max-width: 800px) {
 		grid-template-columns: repeat(
 			auto-fill,
 			minmax(200px, 1fr)
@@ -48,7 +46,6 @@ export const Row = styled.div`
 
 export const FooterLink = styled.a`
 	color: #C8C0BD;
-	
 	font-size: 15px;
 	text-decoration: none;
 

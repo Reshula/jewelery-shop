@@ -3,9 +3,7 @@
   font-family: "Duru Sans", sans-serif;
  
 }
-/* .image{
-  background-image: url(background.jpg);
-} */
+
 .image{
   position: absolute;
   left: 0;
@@ -24,14 +22,14 @@
   text-decoration: underline;
   transition: 200ms ease-in;
 }
-nav{
+/* nav{
   display: flex;
   justify-content: center;
-  /* padding: 5PX; */
+
   margin: 0;
   background-color: #685858;
-  width: 100%;
-}
+  width: 101%;
+} */
 .link {
  padding: 10px;
   text-decoration: none;
@@ -126,8 +124,43 @@ h2{
 .contact-pic{
   position:relative;
   width:100%;
-  height: 70vh;
+  height: 80vh;
+  z-index: -1;
 
+}
+.icon-block-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 50px;
+}
+.icon-block{
+
+  align-content: start;
+  row-gap: 10px;
+}
+.icon-container{
+  display: flex;
+  flex-wrap:wrap ;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 4px;
+
+  /* width: fit-content;
+  margin: auto; */
+  
+      background-image: url('Photo/icon-delevery.png');
+      background-repeat: no-repeat;
+      background-position: center;   
+      background-size: 32px;
+}
+.icon{
+  height: 50px;
+  width: 50px;
+  display: flex;
 }
 
 
@@ -149,12 +182,17 @@ h2{
   }
   .contact-pic{
     position:relative;
-    width: 720px;
+    width: 760px;
     height: 60vh;
   }
   .bg-pic{
     background-image:url(contact-pic.jpg);
     width: 100%;
+  }
+  .image{
+    /* width: 390px; */
+    height: 70vh;
+  
   }
 
 
@@ -168,6 +206,7 @@ h2{
   }
   .image{
     width: 390px;
+    height: 70vh;
   
   }
   .titleShop{
@@ -177,7 +216,7 @@ h2{
   }
 
   /* nav{
-    display: flex;
+    display:flex;
     flex-direction: column;
 } */
 .contact-pic{

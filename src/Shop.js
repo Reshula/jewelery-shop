@@ -5,9 +5,12 @@ import Button from "./Button";
 import MainFooter from "./Footer/MainFooter";
 import  LoaderPage  from './Loader/LoaderPage';
 
+
 function Shop(){
     const [jewelery, setJewelery] = useState(data);
     const [stateLoader, setStateLoader] = useState(false);
+
+  
     
 useEffect(() =>{
     const timer = setTimeout (() =>setStateLoader(false), 3000);

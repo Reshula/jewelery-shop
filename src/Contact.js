@@ -1,6 +1,7 @@
 import MainFooter from "./Footer/MainFooter";
 import React, { useState } from "react";
 import image from './background.jpg'
+
 const FORM_ENDPOINT = "https://herotofu.com/start"; 
 
 const Contact = () => {
@@ -94,7 +95,9 @@ const Contact = () => {
             </button>
             </div>
             </form>
+      
         <MainFooter/>
+
         
         </div>
       );
